@@ -11,7 +11,7 @@
 <p>
   Inside, you will find enhanced projects that demonstrate my abilities in full-stack development, data structures and algorithms, and database management, each one a reflection of my growth as a future computer science professional.
 
-**Click here to explore the full interactive ePortfolio ([https://anedbafe.github.io/CS-499-Capstone/index.html](https://github.com/anedbafe/CS-499-Capstone/blob/main/index.html))**
+**Click here to explore the full interactive ePortfolio (https://anedbafe.github.io/CS-499-Capstone/index.html)**
 </p>
 
 <p align="center">
