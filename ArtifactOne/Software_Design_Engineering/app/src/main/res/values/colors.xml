@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- accent elements / button colors -->
+    <color name="accent">#03DAC5</color>
+
+    <!-- white txt color -->
+    <color name="whiteText">#FFFFFF</color>
+    <color name="btnCancelColorBG">#FF0000</color>
+
+    <!-- GENERAL COLORS -->
+    <color name="primary">#A3D5FF</color>
+    <color name="primaryDark">#370083</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="lightBlue">#00FFFF</color>
+    <color name="background">#F5F5F8</color>
+
+    <!-- BUTTONS BG COLOR -->
+    <color name="cancel_button_color">#FF0000</color>
+    <color name="standard_button_color">#00FFFF</color>
+
+
+</resources>

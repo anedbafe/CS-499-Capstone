@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- app primary color -->
+    <color name="primary">#A3D5FF</color>
+
+    <!-- theme color -->
+    <color name="primaryDark">#370083</color>
+
+    <!-- accent elements / button colors -->
+    <color name="accent">#03DAC5</color>
+
+    <!-- app background color -->
+    <color name="background">#F5F5F5</color>
+
+    <!-- white txt colro -->
+    <color name="whiteText">#FFFFFF</color>
+
+    <color name="black">#000000</color>
+
+    <color name="btnCancelColorBG">#FF0000</color>
+    <color name="lightBlue">#00FFFF</color>
+
+</resources>

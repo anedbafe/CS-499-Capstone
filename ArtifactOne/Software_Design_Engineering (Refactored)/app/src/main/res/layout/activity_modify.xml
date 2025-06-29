@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    tools:ignore="VisualLintBounds">
+
+    <!-- HEADER INCLUDE -->
+    <include
+        layout="@layout/header"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <!-- SEARCH FIELD -->
+    <EditText
+        android:id="@+id/searchProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="true"
+        android:hint="@string/searchField"
+        android:padding="10dp"
+        android:backgroundTint="@color/primaryDark"
+        android:inputType="text"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:layout_marginBottom="10dp"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <!-- PRODUCT NAME FIELD -->
+    <EditText
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="false"
+        android:backgroundTint="@color/primaryDark"
+        android:hint="@string/prodName"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="#546E7A"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <!-- PRODUCT QUANTITY FIELD -->
+    <EditText
+        android:id="@+id/productQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="false"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/primaryDark"
+        android:hint="@string/prodQty"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <!-- PRODUCT LOCATION FIELD -->
+    <EditText
+        android:id="@+id/productLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="false"
+        android:backgroundTint="@color/primaryDark"
+        android:hint="@string/prodLoc"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <!-- PRODUCT ACTION BUTTONS (ADD, UPDATE, DELETE) -->
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnAddProduct"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Add"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/black"
+            android:layout_marginEnd="5dp" />
+
+        <Button
+            android:id="@+id/btnUpdateProduct"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnModify"
+            android:backgroundTint="@color/accent"
+            android:textColor="@color/black"
+            android:layout_marginEnd="5dp" />
+
+        <Button
+            android:id="@+id/btnDeleteProduct"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btnCancelColorBG"
+            android:text="@string/btnErase"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <!-- CLEAR FORM BUTTON -->
+    <Button
+        android:id="@+id/btnCleanForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/btnCancelColorBG"
+        android:text="@string/clear_form"
+        android:textColor="#000000"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <!-- HEADER TEXT FOR PRODUCT LIST -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="0dp"
+        android:background="@color/lightBlue">
+
+        <TextView
+            android:id="@+id/headerID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/headerInfo"
+            android:textSize="16sp"
+            tools:ignore="TextSizeCheck" />
+    </LinearLayout>
+
+    <!-- PRODUCT LIST VIEW -->
+    <ListView
+        android:id="@+id/productListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:paddingTop="5dp" />
+
+    <!-- BOTTOM NAVIGATION MENU BAR -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        app:menu="@menu/bottom_nav_menu"
+        app:labelVisibilityMode="labeled"
+        tools:ignore="VisualLintBottomNav" />
+
+</LinearLayout>

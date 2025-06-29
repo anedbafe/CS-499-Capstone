@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MAIN LAYOUT FOR PRODUCT MANAGEMENT -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/textbox_borders"
+    tools:ignore="VisualLintBounds">
+
+    <!-- TOP HEADER -->
+    <include
+        layout="@layout/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- SEARCH PRODUCT FIELD -->
+    <EditText
+        android:id="@+id/searchProduct"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/search_product"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/black"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:inputType="text"/>
+
+    <!-- LINE DIVIDER -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_marginTop="5dp"/>
+
+    <!-- PRODUCT LIST HEADER -->
+    <TextView
+        android:id="@+id/productHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/product_list"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="18sp"/>
+
+    <!-- PRODUCT LIST VIEW (NOW VISIBLE) -->
+    <ListView
+        android:id="@+id/productListView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"/>
+
+    <!-- SCROLLABLE FORM SECTION -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- PRODUCT NAME -->
+            <EditText
+                android:id="@+id/productName"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="@string/prodName"
+                android:textColorHint="@color/black"
+                android:inputType="text"
+                android:background="@drawable/textbox_background"/>
+
+            <!-- QUANTITY FIELD -->
+            <EditText
+                android:id="@+id/productQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="@string/prodQty"
+                android:textColorHint="@color/black"
+                android:inputType="number"
+                android:background="@drawable/textbox_background"/>
+
+            <!-- LOCATION FIELD -->
+            <EditText
+                android:id="@+id/productLocation"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="@string/prodLoc"
+                android:inputType="text"
+                android:textColorHint="@color/black"
+                android:background="@drawable/textbox_background"/>
+
+            <!-- BUTTONS BAR -->
+            <LinearLayout
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/btnAddProduct"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Add"
+                    android:textSize="20sp"
+                    android:backgroundTint="@color/primary"
+                    android:textColor="@color/black"/>
+
+                <Button
+                    android:id="@+id/btnUpdateProduct"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnModify"
+                    android:textSize="20sp"
+                    android:backgroundTint="@color/accent"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="15dp"/>
+
+                <Button
+                    android:id="@+id/btnDeleteProduct"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:backgroundTint="@color/btnCancelColorBG"
+                    android:text="@string/btnErase"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <!-- CLEAR FORM BUTTON -->
+            <Button
+                android:id="@+id/btnCleanForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/accent"
+                android:text="@string/clear_form"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- FIXED BOTTOM MENU BAR -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/primary"
+        app:menu="@menu/bottom_nav_menu"
+        app:labelVisibilityMode="labeled"/>
+</LinearLayout>

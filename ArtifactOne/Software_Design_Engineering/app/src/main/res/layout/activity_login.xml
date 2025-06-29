@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAYOUT DESIGN FOR LOGO, EMAIL TXT, PSD TXT -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/loginScreen"
+        android:padding="25dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/textbox_borders">
+
+        <!-- LOGO IMG VIEW -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/app_logo"
+            android:layout_marginTop="125dp"
+            android:contentDescription="@string/app_name"
+            />
+
+        <!-- EMAIL TXT BOX  -->
+        <EditText
+            android:id="@+id/getEmail"
+            android:background="@drawable/textbox_background"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:maxWidth="350dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/black"
+            android:autofillHints="emailAddress"
+            />
+
+        <!-- PASSWORD TXT BOX -->
+        <EditText
+            android:id="@+id/getPassword"
+            android:background="@drawable/textbox_background"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:maxWidth="350dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:textColorHint="@color/black"
+            android:autofillHints="password"
+            />
+
+        <!-- LOGIN BUTTON -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="250dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/login"
+            android:backgroundTint="@color/standard_button_color"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+
+        <!-- REGISTER BUTTON -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="250dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/register"
+            android:backgroundTint="@color/accent"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</ScrollView>

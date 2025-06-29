@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Warehouse Management</string>
+
+    <!-- GENERAL TXT LABELS -->
+    <string name="app_title">Warehouse Inventory Management</string>
+    <string name="login">Log In</string>
+    <string name="register">Register</string>
+    <string name="email">Enter your email</string>
+    <string name="password">Enter your Password</string>
+    <string name="password_reset">Password Reset</string>
+
+    <string name="product_name">Search Product:</string>
+    <string name="registration_form_title">Registration Form</string>
+    <string name="firstName">Enter your first name</string>
+
+    <string name="cancel_btn">Cancel</string>
+
+    <string name="headerId">ID</string>
+    <string name="headerName">Product</string>
+    <string name="headerQuantity">Qty</string>
+    <string name="headerLocation">Location</string>
+    <string name="headerInfo">Product List Information</string>
+    <string name="Add">Add</string>
+    <string name="clear_form">Clean Form</string>
+    <string name="btnErase">Delete</string>
+    <string name="btnModify">Modify</string>
+    <string name="prodLoc">Location</string>
+    <string name="prodQty">Quantity</string>
+    <string name="prodName">Product</string>
+    <string name="searchField">Search...</string>
+    <string name="back_button">Back</string>
+    <string name="not_sms_act">SMS On/Off</string>
+    <string name="config">Configuration</string>
+    <string name="product_list">- Product List -</string>
+    <string name="search_product">Type product name</string>
+
+
+</resources>
