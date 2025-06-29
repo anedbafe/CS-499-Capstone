@@ -1,7 +1,5 @@
-<p aligh='center>
-  <strong><title>
-  CS-499 Capstone
-  </strong></title>
-  <br>
-  <h2>Computer Science ePorfolio</h2>
+<p align="center">
+  <strong style="font-size: 24px;">CS-499 Capstone</strong><br>
+  <span style="font-size: 18px;">Computer Science ePortfolio</span>
 </p>
+
