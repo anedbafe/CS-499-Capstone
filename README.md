@@ -10,6 +10,6 @@ This portfolio brings together the knowledge, skills, and dedication I have deve
 
 Inside, you will find enhanced projects that demonstrate my abilities in full-stack development, data structures and algorithms, and database management, each one a reflection of my growth as a future computer science professional.
 
-**[Click here to explore the full interactive ePortfolio] ([https://yourusername.github.io/your-repo/](https://anedbafe.github.io/CS-499-Capstone/Assets/milestoneone.html))**
+**Click here to explore the full interactive ePortfolio (https://anedbafe.github.io/CS-499-Capstone/Assets/milestoneone.html)**
 
 Thank you for visiting, and welcome to my journey.
